@@ -81,4 +81,24 @@
     <servlet-name>CharEspecial01</servlet-name>
     <url-pattern>/CharEspecial01</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IncludeHtmlFull</display-name>
+    <servlet-name>IncludeHtmlFull</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.IncludeHtmlFull</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncludeHtmlFull</servlet-name>
+    <url-pattern>/IncludeHtmlFull</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IncludeHtmlPartial</display-name>
+    <servlet-name>IncludeHtmlPartial</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.IncludeHtmlPartial</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncludeHtmlPartial</servlet-name>
+    <url-pattern>/IncludeHtmlPartial</url-pattern>
+  </servlet-mapping>
 </web-app>
