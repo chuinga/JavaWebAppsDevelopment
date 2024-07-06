@@ -111,14 +111,4 @@
     <servlet-name>IncludeServletSecundaria</servlet-name>
     <url-pattern>/IncludeServletSecundaria</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>IncludeServletPrincipal</display-name>
-    <servlet-name>IncludeServletPrincipal</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.IncludeServletPrincipal</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>IncludeServletPrincipal</servlet-name>
-    <url-pattern>/IncludeServletPrincipal</url-pattern>
-  </servlet-mapping>
 </web-app>

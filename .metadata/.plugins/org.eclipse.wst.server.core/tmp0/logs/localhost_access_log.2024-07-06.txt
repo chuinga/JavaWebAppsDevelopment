@@ -11,3 +11,10 @@
 0:0:0:0:0:0:0:1 - - [06/Jul/2024:10:24:12 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [06/Jul/2024:10:32:59 +0100] "GET /JavaWeb/IncludeHtmlPartial.html HTTP/1.1" 200 85
 0:0:0:0:0:0:0:1 - - [06/Jul/2024:10:32:59 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 304 -
+127.0.0.1 - - [06/Jul/2024:10:35:56 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:10:35:57 +0100] "GET /JavaWeb/IncludeHtmlPartial HTTP/1.1" 200 379
+127.0.0.1 - - [06/Jul/2024:11:31:43 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:11:31:43 +0100] "GET /JavaWeb/IncludeServletSecundaria HTTP/1.1" 200 89
+127.0.0.1 - - [06/Jul/2024:11:35:18 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:11:35:19 +0100] "GET /JavaWeb/IncludeServletPrincipal HTTP/1.1" 200 344
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:11:35:19 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 304 -
