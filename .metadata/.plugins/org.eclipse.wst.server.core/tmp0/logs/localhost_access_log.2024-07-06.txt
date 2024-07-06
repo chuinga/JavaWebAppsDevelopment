@@ -1,0 +1,8 @@
+127.0.0.1 - - [06/Jul/2024:09:30:16 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:42:52 +0100] "GET /JavaWeb/IncludeHtmlFull.html HTTP/1.1" 200 256
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:42:53 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:42:59 +0100] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:45:50 +0100] "GET /JavaWeb/IncludeHtmlFull.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:45:50 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:48:07 +0100] "GET /JavaWeb/IncludeHtmlFull.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [06/Jul/2024:09:48:07 +0100] "GET /JavaWeb/Prof.gif HTTP/1.1" 200 2124

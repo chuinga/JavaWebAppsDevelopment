@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Servlet01Form.html</title>
+    <!-- Servlet01Form.html -->
+</head>
+<body>
+    <form action="Servlet01" method="get">
+        <p>
+            Primeiro nome: <input type="text" name="priNome1" value="Manuel">
+        </p>
+        <p>
+            Ultimo nome: <input type="text" name="ultNome2" value="Joaquim">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">  
+            <input type="submit" value="Enviar para servlet">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+package javafundamentos;
+
+public class OlaMundo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// TODO não te esqueças de fazer isto
+		
+		// FIXME muito importante
+
+		System.out.println("Olá Mundo");
+		
+		System.out.println("Adeus Mundo!");
+		
+		int n = 0;
+		while (n < 300) {
+			n =  n + 1;
+			System.out.println("ola"+n);
+		}
+		
+	}
+
+}

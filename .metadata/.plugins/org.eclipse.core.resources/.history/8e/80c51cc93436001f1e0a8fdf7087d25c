@@ -1,0 +1,10 @@
+package pt.citeforma.libs;
+
+public class HTMLString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

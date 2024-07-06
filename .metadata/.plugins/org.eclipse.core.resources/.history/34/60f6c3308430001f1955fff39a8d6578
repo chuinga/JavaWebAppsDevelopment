@@ -1,0 +1,29 @@
+package javafundamentos;
+
+public class TestaContaBancaria {
+
+	public static void main(String[] args) {
+		
+		//variáveis de classe
+		ContaBancaria.ultimoNumero = ContaBancaria.ultimoNumero + 1;
+		System.out.println("ContaBancaria.ultimoNumero="+ContaBancaria.ultimoNumero);
+		
+		
+		ContaBancaria.juro = 0.05f;
+		ContaBancaria.getJuro();
+		
+		//variáveis de objecto
+		ContaBancaria cb1;
+		cb1 = new ContaBancaria();
+		cb1.numero	= ContaBancaria.ultimoNumero;
+		cb1.titular	= "Jose Antonio";
+		cb1.saldo	= 35;
+		System.out.println("Titular da conta="+cb1.titular);
+		System.out.println("Saldo da conta="+cb1.saldo);
+		
+		
+				
+
+	}
+
+}

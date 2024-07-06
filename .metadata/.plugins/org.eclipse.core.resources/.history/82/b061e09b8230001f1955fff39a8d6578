@@ -1,0 +1,40 @@
+package javafundamentos;
+
+public class ContaBancaria {
+	
+	//variaveis da classe
+		static long  ultimoNumero;	//numero da ultima conta criada
+		static float juro;	//taxa de juro para todas as contas
+		
+		//variaveis de objecto
+		long numero;	//numero de conta
+		String titular;	//nome do titular da conta
+		float saldo;	//saldo da conta
+		
+		//metodos de classe
+		public static void alterarJuro(float novoJuro) {
+			ContaBancaria.juro = novoJuro;
+		}
+		
+		public static float getJuro() {
+			System.out.println("juro="+ContaBancaria.juro);
+			return ContaBancaria.juro;
+		}
+
+	
+	public static void main(String[] args) {
+		
+		ContaBancaria.ultimoNumero = ContaBancaria.ultimoNumero + 1;
+		
+		ContaBancaria cb1;
+		cb1 = new ContaBancaria();
+		cb1.numero	= ContaBancaria.ultimoNumero;
+		cb1.titular	= "Jose Antonio";
+		cb1.saldo	= 35;
+
+	}
+
+	
+	
+	
+}
