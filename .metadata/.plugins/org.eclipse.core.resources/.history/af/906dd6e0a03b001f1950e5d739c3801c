@@ -7,7 +7,7 @@
   </head>
   <body>
     <h2>Quais os seus gostos musicais?</h2>
-    <form action="ServletAction" method="get">
+    <form action="PedidoParametrosNValores" method="get">
         Primeiro nome: <input type="text" name="priNome" value="Manuel"><br>
         Ultimo nome:  <input type="text" name="ultNome" value="Joaquim"><br>
         <br>
@@ -32,6 +32,6 @@
         <input type="submit" Value="Enviar para servlet">
     </form>
     <hr>
-    <a href="ServletAction">Chamar a servlet sem parametros</a>
+    <a href="PedidoParametrosNValores">Chamar a servlet sem parametros</a>
   </body>
 </html>

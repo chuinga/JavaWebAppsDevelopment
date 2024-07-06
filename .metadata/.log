@@ -10738,3 +10738,21 @@ Java Model Exception: Error in Java Model (code 979): Invalid path: '/JavaWeb/sr
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 !SUBENTRY 1 org.eclipse.jdt.core 4 979 2024-07-06 10:32:52.651
 !MESSAGE Invalid path: '/JavaWeb/src/main/webapp/IncludeHtmlPartial.html'
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.068
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.083
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.089
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.091
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.114
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-07-06 15:31:37.136
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access

@@ -131,14 +131,4 @@
     <servlet-name>ServletAction</servlet-name>
     <url-pattern>/ServletAction</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ServletAlvo01</display-name>
-    <servlet-name>ServletAlvo01</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.ServletAlvo01</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ServletAlvo01</servlet-name>
-    <url-pattern>/ServletAlvo01</url-pattern>
-  </servlet-mapping>
 </web-app>
