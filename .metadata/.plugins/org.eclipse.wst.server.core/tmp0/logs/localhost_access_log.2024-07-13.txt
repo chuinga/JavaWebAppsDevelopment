@@ -1,0 +1,10 @@
+127.0.0.1 - - [13/Jul/2024:09:04:13 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:14 +0100] "GET /JavaWeb/AnalisarPedidoHTTP.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:14 +0100] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:24 +0100] "GET /JavaWeb/ServletAction?priNome=Manuel&ultNome=Joaquim&checkboxMusica=Rock&checkboxMusica=Disco&checkboxMusica=Jazz&checkboxMusica=Classica&checkboxMusica=New+Age&checkboxMusica=Opera&listaEscolhaMusica=Rock&listaEscolhaMusica=Disco HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:24 +0100] "GET /JavaWeb/ServletAlvo01?priNome=Manuel&ultNome=Joaquim&checkboxMusica=Rock&checkboxMusica=Disco&checkboxMusica=Jazz&checkboxMusica=Classica&checkboxMusica=New+Age&checkboxMusica=Opera&listaEscolhaMusica=Rock&listaEscolhaMusica=Disco HTTP/1.1" 200 749
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:49 +0100] "GET /JavaWeb/ServletAction HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:04:49 +0100] "GET /JavaWeb/ServletAlvo01?null HTTP/1.1" 200 439
+127.0.0.1 - - [13/Jul/2024:09:13:42 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:13:43 +0100] "GET /JavaWeb/TestCookieOnBrowser HTTP/1.1" 200 184
+0:0:0:0:0:0:0:1 - - [13/Jul/2024:09:13:43 +0100] "GET /JavaWeb/TestCookieOnBrowser?flag=1 HTTP/1.1" 200 491

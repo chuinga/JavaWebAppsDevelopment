@@ -141,14 +141,4 @@
     <servlet-name>ServletAlvo01</servlet-name>
     <url-pattern>/ServletAlvo01</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>TestCookieOnBrowser</display-name>
-    <servlet-name>TestCookieOnBrowser</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.TestCookieOnBrowser</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TestCookieOnBrowser</servlet-name>
-    <url-pattern>/TestCookieOnBrowser</url-pattern>
-  </servlet-mapping>
 </web-app>
