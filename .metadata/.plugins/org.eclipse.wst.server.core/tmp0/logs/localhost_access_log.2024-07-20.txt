@@ -142,3 +142,11 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:44:37 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 1206
 127.0.0.1 - - [20/Jul/2024:16:45:12 +0100] "GET / HTTP/1.1" 404 752
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:45:13 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 130
+127.0.0.1 - - [20/Jul/2024:16:47:19 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:20 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:39 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:40 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:41 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:41 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:41 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:06:00 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
