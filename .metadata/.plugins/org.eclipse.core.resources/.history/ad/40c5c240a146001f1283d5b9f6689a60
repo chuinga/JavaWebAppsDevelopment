@@ -310,19 +310,4 @@
 		<url-pattern>/LerParametrosDeWebXml</url-pattern>
 		<url-pattern>/lerparametrosdewebxml</url-pattern>
 	</servlet-mapping>
-	<listener>
-		<listener-class>pt.citeforma.javaservelets.MyServletContextListener</listener-class>
-	</listener>
-	<context-param>
-		<param-name>url</param-name>
-		<param-value>jdbc:mysql://localhost:8889/winestore</param-value>
-	</context-param>
-	<context-param>
-		<param-name>user</param-name>
-		<param-value>winestore</param-value>
-	</context-param>
-	<context-param>
-		<param-name>password</param-name>
-		<param-value>Xpto.1234</param-value>
-	</context-param>
 </web-app>

@@ -118,3 +118,17 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:41:03 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 395
 127.0.0.1 - - [20/Jul/2024:14:44:14 +0100] "GET / HTTP/1.1" 404 752
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:44:15 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 395
+127.0.0.1 - - [20/Jul/2024:14:59:35 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:59:36 +0100] "GET /JavaWeb/servlet/pt.citeforma.javaservelets.LerParametrosDeWebXml HTTP/1.1" 404 824
+127.0.0.1 - - [20/Jul/2024:15:11:01 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:11:02 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 394
+127.0.0.1 - - [20/Jul/2024:15:19:14 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:19:14 +0100] "GET /JavaWeb/WEB-INF/web.xml HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:19:43 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:19:58 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:21:13 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
+127.0.0.1 - - [20/Jul/2024:15:22:06 +0100] "GET / HTTP/1.1" 404 752
+127.0.0.1 - - [20/Jul/2024:15:33:07 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:15:33:07 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
+127.0.0.1 - - [20/Jul/2024:16:08:55 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:08:55 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
