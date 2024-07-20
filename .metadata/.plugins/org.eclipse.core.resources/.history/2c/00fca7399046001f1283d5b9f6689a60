@@ -1,0 +1,44 @@
+package pt.citeforma.javaservelets;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+import java.io.IOException;
+import java.net.URLEncoder;
+
+
+public class PagLoginAction_b extends HttpServlet {
+    
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Validar que a servlet chamadora é PagLogin
+        String s = request.getHeader("REFERER");
+        if (s == null || !s.contains("/PagLogin_b")) {
+            // A servlet chamadora não foi a que estamos à espera.
+            // Vamos direccionar para o formulário de entrada.
+            // Não podemos usar forward porque este não muda o Referer e cria ciclo em caso de erro
+            //response.sendRedirect(
+            //        "PagLogin?erro=" + 
+            //        URLEncoder.encode("Erro: invocação direta de PagLoginAction", "UTF-8"));
+            response.sendRedirect(response.encodeRedirectURL(
+                    "PagLogin_b?erro=" + 
+                    URLEncoder.encode("Erro: invocação direta de PagLoginAction_b", "UTF-8")));
+        } else {
+            // A servlet chamadora foi a que estamos à espera
+            // Para entrar na aplicação temos que criar nova sessão
+            HttpSession hs = request.getSession();
+
+            // Usamos sendRedirect para dar ao cliente o cookie de sessao
+            //response.sendRedirect("PagApp1");
+            response.sendRedirect(response.encodeRedirectURL("PagApp1_b"));
+        }
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+}

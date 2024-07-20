@@ -275,7 +275,7 @@
 	<description>Mostra como ler parâmetros a partir de WebXML</description>
 	<display-name>LerParametrosDeWebXml</display-name>
 	<servlet-name>LerParametrosDeWebXml</servlet-name>
-	<servlet-class>pt.citeforma.javaservelets.LerParametrosDeWebXml</servlet-class>
+	<servlet-class>com.turtlelearning.javaservlets.LerParametrosDeWebXml</servlet-class>
 	<init-param>
 		<description>Nome do servidor</description>
 		<param-name>host</param-name>
