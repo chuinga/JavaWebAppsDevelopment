@@ -104,3 +104,17 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:13:05:36 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 500 3509
 127.0.0.1 - - [20/Jul/2024:13:07:15 +0100] "GET / HTTP/1.1" 404 752
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:13:07:16 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 394
+127.0.0.1 - - [20/Jul/2024:14:36:41 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:36:41 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 394
+127.0.0.1 - - [20/Jul/2024:14:37:36 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:37:37 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 389
+127.0.0.1 - - [20/Jul/2024:14:38:24 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:38:30 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:38:39 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 389
+127.0.0.1 - - [20/Jul/2024:14:39:06 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:39:07 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:40:19 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 389
+127.0.0.1 - - [20/Jul/2024:14:41:02 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:41:03 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 395
+127.0.0.1 - - [20/Jul/2024:14:44:14 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:14:44:15 +0100] "GET /JavaWeb/LerParametrosDeWebXml HTTP/1.1" 200 395
