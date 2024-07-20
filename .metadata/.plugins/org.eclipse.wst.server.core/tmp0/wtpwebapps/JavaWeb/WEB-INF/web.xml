@@ -151,7 +151,6 @@
     <servlet-name>TestCookieOnBrowser</servlet-name>
     <url-pattern>/TestCookieOnBrowser</url-pattern>
   </servlet-mapping>
-<<<<<<< HEAD
   <servlet>
     <description></description>
     <display-name>PagLogin</display-name>
@@ -192,6 +191,44 @@
     <servlet-name>PagApp2</servlet-name>
     <url-pattern>/PagApp2</url-pattern>
   </servlet-mapping>
-=======
->>>>>>> da4ae47e7487437904389cea84033f22101893c7
+  <servlet>
+    <description></description>
+    <display-name>PagLogin_b</display-name>
+    <servlet-name>PagLogin_b</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.PagLogin_b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagLogin_b</servlet-name>
+    <url-pattern>/PagLogin_b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PagLoginAction_b</display-name>
+    <servlet-name>PagLoginAction_b</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.PagLoginAction_b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagLoginAction_b</servlet-name>
+    <url-pattern>/PagLoginAction_b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PagApp1_b</display-name>
+    <servlet-name>PagApp1_b</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.PagApp1_b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagApp1_b</servlet-name>
+    <url-pattern>/PagApp1_b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PagApp2_b</display-name>
+    <servlet-name>PagApp2_b</servlet-name>
+    <servlet-class>pt.citeforma.javaservelets.PagApp2_b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagApp2_b</servlet-name>
+    <url-pattern>/PagApp2_b</url-pattern>
+  </servlet-mapping>
 </web-app>
