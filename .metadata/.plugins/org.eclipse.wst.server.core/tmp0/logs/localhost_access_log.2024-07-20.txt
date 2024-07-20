@@ -150,3 +150,13 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:41 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:47:41 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:06:00 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+127.0.0.1 - - [20/Jul/2024:17:06:05 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:06:06 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:06:17 +0100] "GET /JavaWeb/ServletErrorGeneric HTTP/1.1" 200 319
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:08:26 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 589
+127.0.0.1 - - [20/Jul/2024:17:09:15 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:09:15 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 589
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:10:03 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 589
+127.0.0.1 - - [20/Jul/2024:17:11:00 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:11:01 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 550
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:42:20 +0100] "GET /PaginasJSP/P01_OlaMundo.jsp HTTP/1.1" 404 762
