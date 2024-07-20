@@ -271,7 +271,6 @@
     <servlet-name>PagApp2_c</servlet-name>
     <url-pattern>/PagApp2_c</url-pattern>
   </servlet-mapping>
-  <!-- 
   <servlet>
 	<description>Mostra como ler parâmetros a partir de WebXML</description>
 	<display-name>LerParametrosDeWebXml</display-name>
@@ -308,5 +307,4 @@
 		<url-pattern>/LerParametrosDeWebXml</url-pattern>
 		<url-pattern>/lerparametrosdewebxml</url-pattern>
 	</servlet-mapping>
-	-->
 </web-app>
