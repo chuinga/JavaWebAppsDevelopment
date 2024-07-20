@@ -332,14 +332,4 @@
     <servlet-name>MyServletContextListenerTestServlet</servlet-name>
     <url-pattern>/MyServletContextListenerTestServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>CriarErro</display-name>
-    <servlet-name>CriarErro</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.CriarErro</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CriarErro</servlet-name>
-    <url-pattern>/CriarErro</url-pattern>
-  </servlet-mapping>
 </web-app>
