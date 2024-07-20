@@ -271,40 +271,4 @@
     <servlet-name>PagApp2_c</servlet-name>
     <url-pattern>/PagApp2_c</url-pattern>
   </servlet-mapping>
-  <servlet>
-	<description>Mostra como ler parâmetros a partir de WebXML</description>
-	<display-name>LerParametrosDeWebXml</display-name>
-	<servlet-name>LerParametrosDeWebXml</servlet-name>
-	<servlet-class>com.turtlelearning.javaservlets.LerParametrosDeWebXml</servlet-class>
-	<init-param>
-		<description>Nome do servidor</description>
-		<param-name>host</param-name>
-		<param-value>localhost</param-value>
-	</init-param>
-	<init-param>
-		<description>Porto do MySQL</description>
-		<param-name>port</param-name>
-		<param-value>3306</param-value>
-	</init-param>
-	<init-param>
-		<description>Schema/database</description>
-		<param-name>dbSchema</param-name>
-		<param-value>winestore</param-value>
-	</init-param>
-	<init-param>
-		<description>Utilizador da BD</description>
-		<param-name>user</param-name>
-		<param-value>winestore</param-value>
-	</init-param>
-	<init-param>
-		<description>Password de acesso</description>
-		<param-name>password</param-name>
-		<param-value>Xpto_1234</param-value>
-	</init-param>
-</servlet>
-	<servlet-mapping>
-		<servlet-name>LerParametrosDeWebXml</servlet-name>
-		<url-pattern>/LerParametrosDeWebXml</url-pattern>
-		<url-pattern>/lerparametrosdewebxml</url-pattern>
-	</servlet-mapping>
 </web-app>
