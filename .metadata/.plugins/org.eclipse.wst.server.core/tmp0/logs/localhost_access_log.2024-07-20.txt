@@ -134,3 +134,6 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:08:55 +0100] "GET /JavaWeb/WEB-INF/classes/pt/citeforma/javaservelets/MyServletContextListener.java HTTP/1.1" 404 683
 127.0.0.1 - - [20/Jul/2024:16:13:56 +0100] "GET / HTTP/1.1" 404 752
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:13:57 +0100] "GET /JavaWeb/MyServletContextListenerTestServlet HTTP/1.1" 200 296
+127.0.0.1 - - [20/Jul/2024:16:36:44 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:36:45 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 130
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:16:37:03 +0100] "GET /JavaWeb/CriarErro HTTP/1.1" 500 130
