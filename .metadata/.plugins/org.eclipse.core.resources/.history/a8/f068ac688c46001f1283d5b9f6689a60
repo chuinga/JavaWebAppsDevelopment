@@ -231,44 +231,4 @@
     <servlet-name>PagApp2_b</servlet-name>
     <url-pattern>/PagApp2_b</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PagLogin_c</display-name>
-    <servlet-name>PagLogin_c</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.PagLogin_c</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PagLogin_c</servlet-name>
-    <url-pattern>/PagLogin_c</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PagLoginAction_c</display-name>
-    <servlet-name>PagLoginAction_c</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.PagLoginAction_c</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PagLoginAction_c</servlet-name>
-    <url-pattern>/PagLoginAction_c</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PagApp1_c</display-name>
-    <servlet-name>PagApp1_c</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.PagApp1_c</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PagApp1_c</servlet-name>
-    <url-pattern>/PagApp1_c</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PagApp2_c</display-name>
-    <servlet-name>PagApp2_c</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.PagApp2_c</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PagApp2_c</servlet-name>
-    <url-pattern>/PagApp2_c</url-pattern>
-  </servlet-mapping>
 </web-app>

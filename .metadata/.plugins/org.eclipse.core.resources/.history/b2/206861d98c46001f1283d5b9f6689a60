@@ -261,14 +261,4 @@
     <servlet-name>PagApp1_c</servlet-name>
     <url-pattern>/PagApp1_c</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>PagApp2_c</display-name>
-    <servlet-name>PagApp2_c</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.PagApp2_c</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PagApp2_c</servlet-name>
-    <url-pattern>/PagApp2_c</url-pattern>
-  </servlet-mapping>
 </web-app>
