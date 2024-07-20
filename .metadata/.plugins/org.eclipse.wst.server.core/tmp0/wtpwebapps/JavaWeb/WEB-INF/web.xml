@@ -151,6 +151,7 @@
     <servlet-name>TestCookieOnBrowser</servlet-name>
     <url-pattern>/TestCookieOnBrowser</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
   <servlet>
     <description></description>
     <display-name>PagLogin</display-name>
@@ -191,4 +192,6 @@
     <servlet-name>PagApp2</servlet-name>
     <url-pattern>/PagApp2</url-pattern>
   </servlet-mapping>
+=======
+>>>>>>> da4ae47e7487437904389cea84033f22101893c7
 </web-app>

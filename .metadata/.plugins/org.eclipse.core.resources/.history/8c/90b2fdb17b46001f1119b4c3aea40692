@@ -8,9 +8,15 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/8c/90b2fdb17b46001f1119b4c3aea40692
  * Servlet implementation class PagApp1
  */
 public class PagApp1 extends HttpServlet {
+========
+ * Servlet implementation class TestCookieOnBrowser
+ */
+public class TestCookieOnBrowser extends HttpServlet {
+>>>>>>>> da4ae47e7487437904389cea84033f22101893c7:.metadata/.plugins/org.eclipse.core.resources/.history/50/40784aa4ef40001f1a4fbe8c7d860b9c
 	private static final long serialVersionUID = 1L;
 
 	/**

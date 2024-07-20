@@ -2,7 +2,11 @@
 <launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
     <stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
     <stringAttribute key="launchable-adapter-id" value="org.eclipse.jst.server.tomcat.web"/>
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.debug.core/.launches/_PagApp1.launch
     <stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:JavaWeb///PagApp1"/>
+========
+    <stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:JavaWeb///TestCookieOnBrowser"/>
+>>>>>>>> da4ae47e7487437904389cea84033f22101893c7:.metadata/.plugins/org.eclipse.debug.core/.launches/_TestCookieOnBrowser.launch
     <stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/JavaWeb"/>
