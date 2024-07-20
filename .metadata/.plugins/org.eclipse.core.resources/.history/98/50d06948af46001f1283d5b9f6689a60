@@ -342,14 +342,4 @@
     <servlet-name>CriarErro</servlet-name>
     <url-pattern>/CriarErro</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ServletErrorGeneric</display-name>
-    <servlet-name>ServletErrorGeneric</servlet-name>
-    <servlet-class>pt.citeforma.javaservelets.ServletErrorGeneric</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ServletErrorGeneric</servlet-name>
-    <url-pattern>/ServletErrorGeneric</url-pattern>
-  </servlet-mapping>
 </web-app>
