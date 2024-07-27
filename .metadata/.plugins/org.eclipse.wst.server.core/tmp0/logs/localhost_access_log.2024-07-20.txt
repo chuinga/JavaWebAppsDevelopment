@@ -162,3 +162,4 @@
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:42:20 +0100] "GET /PaginasJSP/P01_OlaMundo.jsp HTTP/1.1" 404 762
 127.0.0.1 - - [20/Jul/2024:17:42:53 +0100] "GET / HTTP/1.1" 404 752
 0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:42:55 +0100] "GET /PaginasJSP/P01_OlaMundo.jsp HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [20/Jul/2024:17:52:45 +0100] "GET /PaginasJSP/P02_DateTime.jsp HTTP/1.1" 200 240

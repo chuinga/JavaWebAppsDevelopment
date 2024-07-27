@@ -20,6 +20,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Code\Citeforma\JAVA_WEB\eclipse-workspace"/>
 			<item value="C:\Users\migue\OneDrive\Code\Citeforma\JAVA_WEB\eclipse-workspace\JavaWeb2"/>
 			<item value="C:\Users\migue\OneDrive\Code\Citeforma\JAVA_WEB\eclipse-workspace\JavaWeb"/>
 			<item value="C:\Users\migue\OneDrive\Code\Citeforma\JAVA_WEB\eclipse-workspace\javafundamentos"/>
