@@ -21,19 +21,19 @@ public class Select01 {
 		// }
 		String url  = "jdbc:postgresql://vps-b7cf1329.vps.ovh.net:5432/tlusers";
 		Properties props = new Properties();
-		props.setProperty("user", "tluser_23");
+		props.setProperty("user", "tluser_01");
         props.setProperty("password", "Xpto.1234.Student.tluser_01");
         props.setProperty("ssl", "false");
         props.setProperty("ApplicationName", "AserJDBC");
         props.setProperty("defaultRowFetchSize", "50");
-        props.setProperty("options", "-c search_path=tluser_01,pg_catalog,public -c statement_timeout=90000");
+        props.setProperty("options", "-c search_path=jdbctest,public,pg_catalog -c statement_timeout=90000");
         try {
 			Connection conn = DriverManager.getConnection(url, props);
 			
 			// Preparar Statement. Esta confguração cria ResultSet com máximo desempenho
             Statement stmt = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.TYPE_SCROLL_INSENSITIVE);
             
-            String sql  = "SELECT cust_id, firstname, surname from customer";
+            String sql  = "SELECT cust_id, firstname, surname from tluser_01.customer";
             
             ResultSet rset = stmt.executeQuery(sql);
             
