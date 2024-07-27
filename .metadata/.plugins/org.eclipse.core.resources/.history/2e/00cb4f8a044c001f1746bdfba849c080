@@ -51,10 +51,10 @@
             <th>Total pago com juros</th>
         </tr>
         <%
-            //Locale.setDefault(new Locale("pt", "PT"));
-            //Locale.setDefault(new Locale("pt", "BR"));
-            //Locale.setDefault(new Locale("es", "ES"));
-            //Locale.setDefault(new Locale("en", "US"));
+            Locale.setDefault(Locale.of("pt", "PT"));
+            //Locale.setDefault(Locale.of("pt", "BR"));
+            //Locale.setDefault(Locale.of("es", "ES"));
+            //Locale.setDefault(Locale.of("en", "US"));
             //Locale.setDefault(Locale.US);
             //Locale.setDefault(Locale.UK);
             //Locale.setDefault(Locale.JAPAN);

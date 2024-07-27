@@ -51,7 +51,7 @@
             <th>Total pago com juros</th>
         </tr>
         <%
-            //Locale.setDefault(new Locale("pt", "PT"));
+            Locale.setDefault(new Locale("pt", "PT"));
             //Locale.setDefault(new Locale("pt", "BR"));
             //Locale.setDefault(new Locale("es", "ES"));
             //Locale.setDefault(new Locale("en", "US"));
