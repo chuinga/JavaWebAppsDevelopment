@@ -1,0 +1,10 @@
+package pt.citeforma.jdbc;
+
+public class Select01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
