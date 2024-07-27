@@ -21,3 +21,5 @@
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:12:05:37 +0100] "GET /PaginasJSP/P08_IncludeParameters_b.jsp HTTP/1.1" 200 1116
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:12:18:25 +0100] "GET /PaginasJSP/P09_Forward_a.jsp HTTP/1.1" 200 384
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:12:18:32 +0100] "GET /PaginasJSP/P09_Forward_b.jsp HTTP/1.1" 200 404
+127.0.0.1 - - [27/Jul/2024:12:42:53 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [27/Jul/2024:12:42:53 +0100] "GET /PaginasJSP/WEB-INF/classes/pt/citeforma/utilizador/UtilizadorBean.java HTTP/1.1" 404 683
