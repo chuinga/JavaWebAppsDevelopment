@@ -16,7 +16,6 @@ INDEX VERSION 1.134+C:\Code\Citeforma\JAVA_WEB\eclipse-workspace\.metadata\.plug
 2870864605.index
 3263528397.index
 835078665.index
-1207510500.index
 988526381.index
 1734485291.index
 3425473091.index
