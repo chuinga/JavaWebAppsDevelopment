@@ -46,8 +46,8 @@ public class ExecuteQuery extends HttpServlet {
     private void runQuery (String myUrl, String myUser, String myPassword, PrintWriter out) {
         try {
         	Properties props = new Properties();
-    		props.setProperty("user", myUser);
-            props.setProperty("password", myPassword);
+    		props.setProperty("user", "tluser_01");
+            props.setProperty("password", "Xpto.1234.Student.tluser_01");
             props.setProperty("ssl", "false");
             props.setProperty("ApplicationName", "AserJDBC");
             props.setProperty("defaultRowFetchSize", "50");
