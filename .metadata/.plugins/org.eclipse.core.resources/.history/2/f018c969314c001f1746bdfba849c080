@@ -21,7 +21,7 @@ public class Select01 {
 		// }
 		String url  = "jdbc:postgresql://vps-b7cf1329.vps.ovh.net:5432/tlusers";
 		Properties props = new Properties();
-		props.setProperty("user", "tluser_01");
+		props.setProperty("user", "tluser_23");
         props.setProperty("password", "Xpto.1234.Student.tluser_01");
         props.setProperty("ssl", "false");
         props.setProperty("ApplicationName", "AserJDBC");
