@@ -1,0 +1,102 @@
+<%-- 
+    Document   : P06_Diretivas.jsp
+    Author     : TurtleLearning.com: Jose Aser
+--%>
+<%@ page import = "java.util.Date" %>
+<%@ page import = "java.text.DecimalFormat" %>
+<%@ page import = "java.util.Locale" %>
+<%@ page import = "java.text.NumberFormat" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%-- Declaração de variáveis de classe e de objeto --%>
+<%! static double taxaJuro = 4.5; %>
+<%! double emprestimo = 16000.0; %>
+
+<%-- Declaração de métodos de classe e objeto --%>
+<%!
+    public static double getTaxaJuro() {
+        return taxaJuro;
+    }
+    public static double calculoJuros(double capitalEmDivida) {
+        return (capitalEmDivida * taxaJuro / 100.0);
+    }
+%>
+<%!
+    public double myRound(double x) {
+        return (Math.round(x*100.0)/100.0);
+    }
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>P06_Diretivas</title>
+</head>
+<body>
+    <h1>Diretivas JSP</h1>
+    <%-- declaração de uma variável local --%>
+    <% int meses = 72; %>
+
+    <%-- Utilização das variáveis usando diretiva de declaração --%>
+    <table border="1">
+        <tr>
+            <th>Mês</th>
+            <th>Empréstimo</th>
+            <th>Capital em divida</th>
+            <th>Divida/meses</th>
+            <th>Taxa de juro</th>
+            <th>Total de juros</th>
+            <th>Juro mensal</th>
+            <th>Prestação mensal não constante</th>
+            <th>Total pago com juros</th>
+        </tr>
+        <%
+            //Locale.setDefault(new Locale("pt", "PT"));
+            //Locale.setDefault(new Locale("pt", "BR"));
+            //Locale.setDefault(new Locale("es", "ES"));
+            //Locale.setDefault(new Locale("en", "US"));
+            //Locale.setDefault(Locale.US);
+            //Locale.setDefault(Locale.UK);
+            Locale.setDefault(Locale.JAPAN);
+            NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.getDefault()); 
+            String currency = formatter.getCurrency().toString();
+            DecimalFormat f = new DecimalFormat("###,###,##0.00");
+            double capitalEmDivida = emprestimo;
+            double dividaPorMes = myRound(emprestimo/meses);
+            double totalJuros = myRound(capitalEmDivida*getTaxaJuro()/100);
+            double juroMensal = myRound(totalJuros/12.0);
+            double prestacaoMensal = dividaPorMes + juroMensal;
+            double totalPagoComJuros = prestacaoMensal;
+            
+            for (int i=1; i<=meses; i++) {
+                out.println("<tr>");
+                out.println("<td style=\"text-align:right;\">" + i + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(emprestimo) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(capitalEmDivida) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(dividaPorMes) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(getTaxaJuro()) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(totalJuros) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(juroMensal) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(prestacaoMensal) + " " + currency + "</td>");
+                out.println("<td style=\"text-align:right;\">" + f.format(totalPagoComJuros) + " " + currency + "</td>");
+                out.println("</tr>");
+                capitalEmDivida = capitalEmDivida - dividaPorMes;
+                totalJuros = myRound(capitalEmDivida*getTaxaJuro()/100);
+                juroMensal = myRound(totalJuros/12.0);
+                prestacaoMensal = dividaPorMes + juroMensal;
+                totalPagoComJuros = totalPagoComJuros + prestacaoMensal;
+            }
+        %>
+    </table>
+    <hr>
+    <p>Valor do empréstimo = <%= f.format(emprestimo)+ " " + currency %> 
+        <br>Total pago com juros = <%= f.format(totalPagoComJuros - prestacaoMensal) + " " + currency %>
+        <br>Acerto da última prestação = <%= f.format(capitalEmDivida) + " " + currency %>
+        <br>Prestação mensal constante = <%= f.format((totalPagoComJuros - prestacaoMensal) / meses) + " " + currency %>
+           <br>Taxa de juro = <%= f.format(getTaxaJuro()) %>
+           <!-- <br>Meses = <%-- out.println(meses); --%> -->
+           <br>Meses = <%= meses %></p>
+       <p>Simulação feita em <%= new Date() %></p>
+    <hr>
+</body>
+</html>
