@@ -28,3 +28,5 @@
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:14:36:07 +0100] "GET /PaginasJSP/P10_JavaBean_a.jsp HTTP/1.1" 200 411
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:14:52:06 +0100] "GET /PaginasJSP/P11_PaginaErro.jsp HTTP/1.1" 500 3181
 0:0:0:0:0:0:0:1 - - [27/Jul/2024:14:53:23 +0100] "GET /PaginasJSP/P11_PaginaErro.jsp HTTP/1.1" 500 3181
+127.0.0.1 - - [27/Jul/2024:14:57:11 +0100] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [27/Jul/2024:14:57:13 +0100] "GET /PaginasJSP/P11_PaginaErro.jsp HTTP/1.1" 500 3137
