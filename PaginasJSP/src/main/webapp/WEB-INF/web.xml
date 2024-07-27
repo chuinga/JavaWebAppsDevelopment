@@ -30,17 +30,17 @@
     <location>/P11_PaginaErro.jsp</location>
   </error-page>
   <context-param>
-		<param-name>url</param-name>
-		<param-value>jdbc:postgresql://vps-b7cf1329.vps.ovh.net:5432/tlusers</param-value>
-	</context-param>
-	<context-param>
-		<param-name>user</param-name>
-		<param-value>tluser_01</param-value>
-	</context-param>
-	<context-param>
-		<param-name>password</param-name>
-		<param-value>Xpto.1234.Student.tluser_01</param-value>
-	</context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:postgresql://vps-b7cf1329.vps.ovh.net:5432/tlusers</param-value>
+  </context-param>
+  <context-param>
+    <param-name>user</param-name>
+    <param-value>tluser_01</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>Xpto.1234.Student.tluser_01</param-value>
+  </context-param>
   <servlet>
     <description></description>
     <display-name>ExecuteQuery</display-name>
@@ -51,4 +51,7 @@
     <servlet-name>ExecuteQuery</servlet-name>
     <url-pattern>/ExecuteQuery</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>pt.citeforma.servlets.MyServletContextListener</listener-class>
+  </listener>
 </web-app>

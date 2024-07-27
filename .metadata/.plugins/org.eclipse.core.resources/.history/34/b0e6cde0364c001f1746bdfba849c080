@@ -1,0 +1,114 @@
+package pt.citeforma.jdbc;
+
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+
+public class ExecuteQuery extends HttpServlet {
+    
+    private static final long serialVersionUID = 1L;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        ServletContext myServletContext = this.getServletContext();
+        String myUrl = (String) myServletContext.getAttribute("myUrl");
+        String myUser = (String) myServletContext.getAttribute("myUser");
+        String myPassword = (String) myServletContext.getAttribute("myPassword");
+        response.setContentType("text/html;charset=UTF-8");        
+        PrintWriter out = response.getWriter();
+        out.println("<!DOCTYPE html>");
+        out.println("<html lang=\"pt\">");
+        out.println("<head>");
+        out.println("<meta charset=\"utf-8\">");
+        out.println("<title>Execute Query</title>");
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>Execute Query</h1>");
+        runQuery(myUrl, myUser, myPassword, out);
+        out.println("</body>");
+        out.println("</html>");
+        out.close();
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
+    }
+    
+    private void runQuery(String myUrl, String myUser, String myPassword, PrintWriter out) {
+        Connection myConn = null;
+        Statement stmt = null;
+        ResultSet rset = null;
+        try {
+            Properties props = new Properties();
+            props.setProperty("user", myUser);
+            props.setProperty("password", myPassword);
+            props.setProperty("ssl", "false");
+            props.setProperty("ApplicationName", "AserJDBC");
+            props.setProperty("defaultRowFetchSize", "50");
+            props.setProperty("options", "-c search_path=tluser_01,pg_catalog,public -c statement_timeout=90000");
+
+            myConn = DriverManager.getConnection(myUrl, props);
+            stmt = myConn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.TYPE_SCROLL_INSENSITIVE);
+
+            String sql = "SELECT cust_id, firstname, surname FROM customer";
+            rset = stmt.executeQuery(sql);
+
+            long n = 0;
+            out.printf("<pre>");
+            out.printf("%1$-7s | %2$-25s | %3$-25s |%n", "cust_id", "firstname", "surname");
+            while (rset.next()) {
+                out.printf("%1$7s | %2$-25s | %3$-25s |%n", 
+                        rset.getString("cust_id"),
+                        rset.getString("firstname"), 
+                        rset.getString("surname"));
+                n++;
+            }
+            if (n > 0) {
+                out.println("Foram devolvidas " + n + " linhas");
+            } else {
+                out.println("O query não devolveu linhas");
+            }
+            out.printf("</pre>");
+        } catch (SQLException e) {
+            out.printf("<pre>");
+            out.println("Erro:");
+            out.println("Código do erro: " + e.getErrorCode());
+            out.println("Mensagem de erro: " + e.getMessage());
+            out.printf("</pre>");
+        } finally {
+            // Fechar ResultSet
+            if (rset != null) {
+                try {
+                    rset.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            // Fechar Statement
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            // Fechar Connection
+            if (myConn != null) {
+                try {
+                    myConn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}

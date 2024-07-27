@@ -1,0 +1,34 @@
+package pt.citeforma.servlets;
+
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
+
+/**
+ * Application Lifecycle Listener implementation class MyServletContextListener
+ *
+ */
+public class MyServletContextListener implements ServletContextListener {
+
+    /**
+     * Default constructor. 
+     */
+    public MyServletContextListener() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+     * @see ServletContextListener#contextInitialized(ServletContextEvent)
+     */
+    public void contextInitialized(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent sce)  { 
+         // TODO Auto-generated method stub
+    }
+	
+}

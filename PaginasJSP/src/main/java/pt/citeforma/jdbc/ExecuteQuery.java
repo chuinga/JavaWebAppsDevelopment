@@ -53,7 +53,7 @@ public class ExecuteQuery extends HttpServlet {
             props.setProperty("defaultRowFetchSize", "50");
             props.setProperty("options", "-c search_path=tluser_01,pg_catalog,public -c statement_timeout=90000");
             // Registar o driver
-            //DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+            DriverManager.registerDriver(new org.postgresql.Driver());
             // Abrir a ligaçao
             //myUrl = myUrl + "?useSSL=false&useUnicode=yes&characterEncoding=utf8";
             //Connection myConn = DriverManager.getConnection(myUrl, myUser, myPassword);
